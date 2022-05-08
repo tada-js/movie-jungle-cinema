@@ -149,16 +149,16 @@ a {
   color: transparent;
 }
 
+/* COMMON */
 html {
   font-size: 10px;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   font-family: "Roboto", "Noto Sans KR";
 }
 
+/* MOVIE LIST STYLE */
 .wrap-movie {
   width: 1060px;
   height: 1170px;
@@ -279,11 +279,11 @@ body {
 
 .wrap-movie .list-movieInfo .list-info dt:nth-child(3)::after {
   content: "";
+  width: 14px;
+  height: 14px;
   background-image: url("../images/별점이미지.png");
   display: inline-block;
   vertical-align: -2px;
-  width: 14px;
-  height: 14px;
 }
 
 .wrap-movie .list-movieInfo .list-info dd {
@@ -296,5 +296,99 @@ body {
 
 .wrap-movie .list-movieInfo .list-info dd:nth-child(6) {
   width: 150px;
+}
+
+/* FOOTER */
+.cont-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 133px;
+  background-color: #f2f2f2;
+}
+
+.cont-company .cont-Info {
+  width: 70%;
+  margin: 53px auto 38px;
+}
+
+.cont-company .cont-Info .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 42px;
+}
+
+.cont-company .cont-Info .footer-top .tit-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.cont-company .cont-Info .footer-top .list-sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cont-company .cont-Info .footer-top .list-sns .img-sns {
+  width: 24px;
+  height: 24px;
+  padding: 20px;
+}
+
+.cont-company .cont-Info .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 34px;
+}
+
+.cont-company .cont-Info .footer-bottom .list-compInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+}
+
+.cont-company .cont-Info .footer-bottom .list-compInfo dt {
+  font-weight: 700;
+}
+
+.cont-company .cont-Info .footer-bottom .list-compInfo dt:first-child::after,
+.cont-company .cont-Info .footer-bottom .list-compInfo dd:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #4f4f4f;
+}
+
+.cont-company .cont-Info .footer-bottom .txt-copy {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4f4f4f;
 }
 /*# sourceMappingURL=style.css.map */
