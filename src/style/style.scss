@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import "reset";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", "Noto Sans KR";
+}
+
+.wrap-movie {
+  width: 1060px;
+  height: 1170px;
+  margin: 90px auto;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  .tit-cont {
+    margin: 0 203px;
+    padding-top: 40px;
+    padding-bottom: 37px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    border-bottom: 2px solid #bdbdbd;
+  }
+  .tit-nav {
+    margin: 27px 0;
+  }
+  .list-movieNav {
+    display: flex;
+    justify-content: space-between;
+    width: 372px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+    li:nth-child(1) {
+      color: #000000;
+    }
+    .link-nav:hover {
+      color: #000000;
+    }
+  }
+  .list-movieInfo {
+    padding: 0 28px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 22px;
+    padding: 26px;
+    margin: 27px;
+    border: 2px solid #bdbdbd;
+    border-radius: 15px;
+    background-color: #ffffff;
+    .cont-movie {
+      width: 220px;
+      height: 441px;
+      border: 1px solid #bdbdbd;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 0px #bdbdbd;
+    }
+    .img-poster {
+      display: block;
+      width: 180px;
+      height: 250px;
+      margin: 18px auto 0;
+      border: 1px solid #bdbdbd;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 10px;
+    }
+    .tit-movie {
+      display: block;
+      margin-top: 10px;
+      color: #000000;
+      font-weight: 900;
+      font-size: 16px;
+    }
+    .tit-ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .list-info {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 19px;
+      dt,
+      dd {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 19px;
+      }
+      dt {
+        color: #828282;
+      }
+      dt:nth-child(3)::after {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-image: url("../images/별점이미지.png");
+        display: inline-block;
+        vertical-align: -2px;
+      }
+      dd {
+        color: #000000;
+      }
+      dd:nth-child(2) {
+        width: 85px;
+      }
+      dd:nth-child(6) {
+        width: 150px;
+      }
+    }
+  }
+}

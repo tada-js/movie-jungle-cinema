@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ir {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 1px;
+  color: transparent;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", "Noto Sans KR";
+}
+
+.wrap-movie {
+  width: 1060px;
+  height: 1170px;
+  margin: 90px auto;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+.wrap-movie .tit-cont {
+  margin: 0 203px;
+  padding-top: 40px;
+  padding-bottom: 37px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  border-bottom: 2px solid #bdbdbd;
+}
+
+.wrap-movie .tit-nav {
+  margin: 27px 0;
+}
+
+.wrap-movie .list-movieNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 372px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+
+.wrap-movie .list-movieNav li:nth-child(1) {
+  color: #000000;
+}
+
+.wrap-movie .list-movieNav .link-nav:hover {
+  color: #000000;
+}
+
+.wrap-movie .list-movieInfo {
+  padding: 0 28px 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 22px;
+  padding: 26px;
+  margin: 27px;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.wrap-movie .list-movieInfo .cont-movie {
+  width: 220px;
+  height: 441px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px #bdbdbd;
+          box-shadow: 0px 0px 5px 0px #bdbdbd;
+}
+
+.wrap-movie .list-movieInfo .img-poster {
+  display: block;
+  width: 180px;
+  height: 250px;
+  margin: 18px auto 0;
+  border: 1px solid #bdbdbd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+.wrap-movie .list-movieInfo .tit-movie {
+  display: block;
+  margin-top: 10px;
+  color: #000000;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.wrap-movie .list-movieInfo .tit-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap-movie .list-movieInfo .list-info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.wrap-movie .list-movieInfo .list-info dt,
+.wrap-movie .list-movieInfo .list-info dd {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.wrap-movie .list-movieInfo .list-info dt {
+  color: #828282;
+}
+
+.wrap-movie .list-movieInfo .list-info dt:nth-child(3)::after {
+  content: "";
+  background-image: url("../images/별점이미지.png");
+  display: inline-block;
+  vertical-align: -2px;
+  width: 14px;
+  height: 14px;
+}
+
+.wrap-movie .list-movieInfo .list-info dd {
+  color: #000000;
+}
+
+.wrap-movie .list-movieInfo .list-info dd:nth-child(2) {
+  width: 85px;
+}
+
+.wrap-movie .list-movieInfo .list-info dd:nth-child(6) {
+  width: 150px;
+}
+/*# sourceMappingURL=style.css.map */
